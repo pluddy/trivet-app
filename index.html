@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trivet — Privacy &amp; Support</title>
+<style>
+  :root {
+    --bg: #f6f5f2;
+    --surface: #ffffff;
+    --text: #1c1a17;
+    --muted: #6b655d;
+    --rule: #e7e3dc;
+    --ember: #d86a38;
+    --radius: 16px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14120f;
+      --surface: #1e1b17;
+      --text: #efece6;
+      --muted: #a49c90;
+      --rule: #322d27;
+      --ember: #e5824f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    padding: 0 20px;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 56px 0 80px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  .mark {
+    width: 52px; height: 52px; border-radius: 13px; flex: none;
+    background: linear-gradient(160deg, #6a3f18, #3a2410);
+    display: grid; place-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,.25);
+  }
+  .mark span { font-size: 30px; line-height: 1; }
+  h1 { font-size: 1.6rem; margin: 0; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 2px 0 0; font-size: 0.95rem; }
+  section {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    margin-top: 22px;
+  }
+  h2 { font-size: 1.2rem; margin: 0 0 6px; letter-spacing: -0.01em; }
+  h3 { font-size: 1.02rem; margin: 20px 0 4px; }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); }
+  a { color: var(--ember); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  a:focus-visible { outline: 2px solid var(--ember); outline-offset: 3px; border-radius: 4px; }
+  ul { padding-left: 1.2em; }
+  li { margin: 3px 0; }
+  .updated { font-size: 0.85rem; color: var(--muted); margin-top: 4px; }
+  footer { color: var(--muted); font-size: 0.85rem; text-align: center; margin-top: 34px; }
+  .disclaimer { font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="mark" aria-hidden="true"><span>☕️</span></div>
+    <div>
+      <h1>Trivet</h1>
+      <p class="sub">Privacy Policy &amp; Support</p>
+    </div>
+  </header>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p>Questions, bugs, or feedback? Email
+      <a href="mailto:pluddy@outlook.com">pluddy@outlook.com</a>.
+      We usually reply within a few business days.</p>
+
+    <h3>My mug won't pair</h3>
+    <p class="muted">Put the mug on its charging coaster, then press and hold the button on
+      the bottom of the mug for about 5 seconds until the light flashes blue. Open Trivet,
+      tap <strong>+</strong>, and wait for it to appear under "Nearby Mugs." Make sure
+      Bluetooth is on and that Trivet has Bluetooth permission (Settings → Trivet).</p>
+
+    <h3>It keeps disconnecting</h3>
+    <p class="muted">Bluetooth range is short — keep the mug within a few metres of your
+      iPhone. Trivet reconnects automatically when the mug is back in range.</p>
+
+    <h3>I bought Pro but don't see it</h3>
+    <p class="muted">Open the paywall or Settings and tap <strong>Restore Purchases</strong>.
+      Pro is a one-time purchase with Family Sharing.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p class="updated">Last updated: August 2, 2026</p>
+
+    <p><strong>The short version:</strong> Trivet has no account and no analytics. It talks
+      to your mug over Bluetooth on your device. The only time any data leaves your device
+      is when you enable Live Activities, and then only to deliver those updates to your own
+      device via Apple Push Notification service.</p>
+
+    <h3>What Trivet stores on your device</h3>
+    <ul>
+      <li>Your paired mugs and their nicknames, temperature presets, and unit preference.</li>
+      <li>The most recent state of each mug (temperature, battery, fill), shared with
+        Trivet's own widgets and Live Activities through a private app group.</li>
+    </ul>
+    <p class="muted">This stays on your device (and in your iCloud device backup, if you use
+      one). Trivet does not upload it. There is no server that stores your data.</p>
+
+    <h3>Live Activities (push-to-start)</h3>
+    <p>If you use Live Activities, iOS issues a push token for the activity. Trivet sends
+      that token, together with the mug's current display state (name, temperature, battery,
+      status), to a small stateless relay so Apple can start or update the Live Activity on
+      your device. The relay signs the request and forwards it to Apple Push Notification
+      service; it does not log or retain your tokens or mug data. This information is used
+      only to render your own Live Activity and is never sold, shared, or used for
+      advertising or tracking.</p>
+
+    <h3>What Trivet does not do</h3>
+    <ul>
+      <li>No account, sign-in, email, or contacts.</li>
+      <li>No advertising identifiers, third-party analytics, or tracking SDKs.</li>
+      <li>No tracking across apps or websites.</li>
+      <li>No location, photos, or health data.</li>
+    </ul>
+
+    <h3>Purchases</h3>
+    <p class="muted">Trivet Pro is a one-time purchase handled entirely by Apple's App
+      Store / StoreKit. Trivet never sees your payment information.</p>
+
+    <h3>Children</h3>
+    <p class="muted">Trivet does not target children and collects no personal information.</p>
+
+    <h3>Contact</h3>
+    <p class="muted">Questions about this policy:
+      <a href="mailto:pluddy@outlook.com">pluddy@outlook.com</a>.</p>
+  </section>
+
+  <p class="disclaimer muted">Trivet is an independent, unofficial utility and is not
+    affiliated with, endorsed by, or connected to Ember. "Ember" is a trademark of its
+    respective owner.</p>
+
+  <footer>© 2026 Trivet</footer>
+</main>
+</body>
+</html>
