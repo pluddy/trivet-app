@@ -98,7 +98,7 @@
 
   <section id="privacy">
     <h2>Privacy Policy</h2>
-    <p class="updated">Last updated: August 2, 2026</p>
+    <p class="updated">Last updated: September 13, 2026</p>
 
     <p><strong>The short version:</strong> Trivet has no account and no analytics. It talks
       to your mug over Bluetooth on your device. The only time any data leaves your device
@@ -118,7 +118,7 @@
     <p>If you use Live Activities, iOS issues a push token for the activity. Trivet sends
       that token, together with the mug's current display state (name, temperature, battery,
       status), to a small stateless relay so Apple can start or update the Live Activity on
-      your device. The relay signs the request and forwards it to Apple Push Notification
+      your device. The relay validates and signs the request, then forwards it to Apple Push Notification
       service; it does not log or retain your tokens or mug data. This information is used
       only to render your own Live Activity and is never sold, shared, or used for
       advertising or tracking.</p>
